@@ -1,0 +1,28 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-ksas-callouts-ksas-callout-block.callout {
+	font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
+	font-weight: 600;
+  	font-style: normal;
+  	font-display: swap;
+	&.is-style-heritage {
+		background-color: $heritageblue;
+		color: $white;
+	    p a {
+	      color: $white;
+	    }
+	}
+	&.is-style-spirit {
+		background-color: $spiritblue;
+	}
+  	&.is-style-grey {
+    	background-color: $gray;
+  	}
+	&.is-style-alert {
+		background-color: $alert;
+	}
+}
