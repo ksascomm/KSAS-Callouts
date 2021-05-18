@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "ksas-block/ksas-callouts",
+	"title": "KSAS Callouts",
+	"category": "common",
+	"icon": "megaphone",
+	"description": "Creates a post block for callouts.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ksas-callouts",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

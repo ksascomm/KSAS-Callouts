@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ @font-face {
+    font-family: "gentona-light";
+    src: url( Gentona-Light.ttf );
+}
+
+@font-face {
+    font-family: "gentona-semibold";
+    src: url( Gentona-SemiBold.ttf );
+}
+
+.wp-block-ksas-block-ksas-callouts {
+	position: relative;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: 2px solid rgba(191, 204, 217,.5);
+    border-radius: 0;
+    background-color: rgba(191, 204, 217,.5);;
+    color: #31261d;
+	font-family: "gentona-light","Helvetica Neue",Roboto,sans-serif;
+	font-weight: 400;
+  	font-style: normal;
+  	font-display: swap;
+	&.is-style-white {
+		background-color: #fefefe;
+	}
+	&.is-style-grey {
+		a {
+			border-color: #4A484C;
+		}
+	}
+	strong, b {
+		font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
+		font-weight: 600;
+	}
+
+}
+
+.wp-block-ksas-block-ksas-callouts {
+
+}

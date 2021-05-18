@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ksas-block-ksas-callouts {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+@font-face {
+  font-family: "gentona-semibold";
+  src: url(Gentona-SemiBold.ttf);
+}
+
+.wp-block-ksas-block-ksas-callouts {
+  font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.wp-block-ksas-block-ksas-callouts.is-style-heritage {
+  background-color: #002d72;
+  color: #fefefe;
+}
+
+.wp-block-ksas-block-ksas-callouts.is-style-heritage p a {
+  color: #fefefe;
+}
+
+.wp-block-ksas-block-ksas-callouts.is-style-spirit {
+  background-color: #68ace5;
+}
+
+.wp-block-ksas-block-ksas-callouts.is-style-grey {
+  background-color: #eaeaea;
+}
+
+.wp-block-ksas-block-ksas-callouts.is-style-alert {
+  background-color: #fff3d9;
+}
+/*# sourceMappingURL=style.css.map */
