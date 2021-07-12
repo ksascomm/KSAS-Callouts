@@ -7,12 +7,14 @@
 
  @font-face {
     font-family: "gentona-light";
-    src: url( Gentona-Light.ttf );
+    src: url( Gentona-Light.woff ) format("woff");
+	font-display: fallback;
 }
 
 @font-face {
     font-family: "gentona-semibold";
-    src: url( Gentona-SemiBold.ttf );
+    src: url( Gentona-SemiBold.woff ) format("woff");;
+	font-display: fallback;
 }
 
 .wp-block-ksas-block-ksas-callouts {
@@ -26,7 +28,6 @@
 	font-family: "gentona-light","Helvetica Neue",Roboto,sans-serif;
 	font-weight: 400;
   	font-style: normal;
-  	font-display: swap;
 	&.is-style-white {
 		background-color: #fefefe;
 	}
@@ -39,9 +40,4 @@
 		font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
 		font-weight: 600;
 	}
-
-}
-
-.wp-block-ksas-block-ksas-callouts {
-
 }
