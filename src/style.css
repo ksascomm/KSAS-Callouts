@@ -10,11 +10,6 @@
   padding: 2px;
 }
 
-@font-face {
-  font-family: "gentona-semibold";
-  src: url(Gentona-SemiBold.woff);
-}
-
 .wp-block-ksas-block-ksas-callouts {
   font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
   font-weight: 600;
