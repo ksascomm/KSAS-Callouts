@@ -12,7 +12,7 @@
     border-radius: 0;
     background-color: rgba(191, 204, 217,.5);;
     color: #31261d;
-	font-family: "gentona-light","Helvetica Neue",Roboto,sans-serif;
+	font-family: "worksans-regular","Helvetica Neue",Roboto,sans-serif;
 	font-weight: 400;
   	font-style: normal;
 	&.is-style-white {
@@ -24,7 +24,7 @@
 		}
 	}
 	strong, b {
-		font-family: "gentona-semibold","Helvetica Neue",Roboto,sans-serif;
-		font-weight: 600;
+		font-family: "worksans-bold","Helvetica Neue",Roboto,sans-serif;
+		font-weight: 700;
 	}
 }
