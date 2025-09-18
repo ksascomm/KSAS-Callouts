@@ -4,6 +4,21 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+
+@font-face {
+	font-family: WorkSans-Regular;
+	src: url('./src/WorkSans-Regular.woff2') format("woff2"), url('./src/WorkSans-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family:WorkSans-Bold;
+	src: url('./src/WorkSans-Bold.woff2') format("woff2"), url('./src/WorkSans-Bold.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 .wp-block-ksas-block-ksas-callouts {
   background-color: #21759b;
   color: #fff;
