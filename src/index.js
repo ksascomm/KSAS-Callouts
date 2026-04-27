@@ -4,8 +4,8 @@
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 const { __ } = wp.i18n;
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { registerBlockType } from "@wordpress/blocks";
+import { useBlockProps, RichText } from "@wordpress/block-editor";
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -13,7 +13,7 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+import "./style.scss";
 
 /**
  * Internal dependencies
@@ -26,59 +26,59 @@ import save from './save'; */
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'ksas-block/ksas-callouts', {
+registerBlockType("ksas-block/ksas-callouts", {
 	apiVersion: 2,
-    attributes: {
-        content: {
-            type: 'array',
-            source: 'children',
-            selector: 'p',
-			default: '', // empty default
-        },
-    },
+	attributes: {
+		content: {
+			type: "array",
+			source: "children",
+			selector: "p",
+			default: "", // empty default
+		},
+	},
 	example: {
-        attributes: {
-            content: 'Please edit this text to whatever message you wish to convey.',
-        },
-    },
+		attributes: {
+			content: "Please edit this text to whatever message you wish to convey.",
+		},
+	},
 	styles: [
 		{
-		    name: 'grey',
-		    label: __( 'Grey (default)'),
-		    isDefault: true
+			name: "grey",
+			label: __("Grey (default)"),
+			isDefault: true,
 		},
 		{
-		    name: 'white',
-		    label: __( 'White' )
+			name: "white",
+			label: __("White"),
 		},
 	],
-    edit: ( props ) => {
-        const {
-            attributes: { content },
-            setAttributes,
-            className,
-        } = props;
-        const blockProps = useBlockProps();
-        const onChangeContent = ( newContent ) => {
-            setAttributes( { content: newContent } );
-        };
-        return (
-            <RichText
-                { ...blockProps }
-                tagName="p"
-                onChange={ onChangeContent }
-                value={ content }
-            />
-        );
-    },
-    save: ( props ) => {
-        const blockProps = useBlockProps.save();
-        return (
-            <RichText.Content
-                { ...blockProps }
-                tagName="p"
-                value={ props.attributes.content }
-            />
-        );
-    },
-} );
+	edit: (props) => {
+		const {
+			attributes: { content },
+			setAttributes,
+			className,
+		} = props;
+		const blockProps = useBlockProps();
+		const onChangeContent = (newContent) => {
+			setAttributes({ content: newContent });
+		};
+		return (
+			<RichText
+				{...blockProps}
+				tagName="p"
+				onChange={onChangeContent}
+				value={content}
+			/>
+		);
+	},
+	save: (props) => {
+		const blockProps = useBlockProps.save();
+		return (
+			<RichText.Content
+				{...blockProps}
+				tagName="p"
+				value={props.attributes.content}
+			/>
+		);
+	},
+});

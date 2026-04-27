@@ -1,6 +1,6 @@
 {
 	"name": "ksas-callouts",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"description": "Creates a post block for callouts",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
@@ -13,6 +13,6 @@
 		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.23.0"
+		"@wordpress/scripts": "^32.0.0"
 	}
 }

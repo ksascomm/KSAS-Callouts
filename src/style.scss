@@ -21,23 +21,24 @@
 }
 
 .wp-block-ksas-block-ksas-callouts {
+    position: relative;  
+    padding: 1rem 1rem 1rem 1.5rem; 
     margin: 0 0 1rem 0;
-    padding: 1rem;
-    border: 2px solid rgba(191, 204, 217,.5);
-    border-radius: 0;
-    background-color: rgba(191, 204, 217,.5);;
+    background: #F0F5FA;
     color: #31261d;
 	font-family: "worksans-regular","Helvetica Neue",Roboto,sans-serif;
 	font-weight: 400;
   	font-style: normal;
-	&.is-style-white {
-		background-color: #fefefe;
-	}
-	&.is-style-grey {
-		a {
-			border-color: #4A484C;
-		}
-	}
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		border: solid 2px #0077D8;
+		width: 96%;
+		height: 98%;
+		bottom: -15px;
+		left: -14px;
+    }
 	strong, b {
 		font-family: "worksans-bold","Helvetica Neue",Roboto,sans-serif;
 		font-weight: 700;
