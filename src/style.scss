@@ -29,6 +29,9 @@
 	font-family: "worksans-regular","Helvetica Neue",Roboto,sans-serif;
 	font-weight: 400;
   	font-style: normal;
+	border-color:  #bfccd980;
+	border-style: solid;
+    border-width: 1px;
 	&::before {
 		content: '';
 		position: absolute;
